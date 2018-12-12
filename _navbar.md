@@ -1,7 +1,3 @@
 - [Home](README.md)
-- Docs
-  - [:uk: English](/en/)
-  - [:cn: 中文](/zh-cn/)
-  - [:de: Deutsch](/de-de/)
-  - [:es: Spanish](/es/)
-  - [:ru: Russian](/ru/)
+- [Admin](/admin/ ':ignore')
+- [:cn: Docs](/zh-cn/)

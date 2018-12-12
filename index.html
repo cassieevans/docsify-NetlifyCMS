@@ -16,6 +16,12 @@
     disabled>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.8.6/lib/themes/vue.min.css" title="pure" disabled>
   <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-codefund@1.0.4/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/netlify-identity-widget@1.5.2/build/netlify-identity-widget.min.js"></script>
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
   <style>
     nav.app-nav li ul {
       min-width: 100px;
@@ -28,14 +34,10 @@
   <script>
     window.$docsify = {
       alias: {
+        '/.*/_navbar.md': '/_navbar.md',
+        '/zh-cn/(.*)': 'https://raw.githubusercontent.com/docsifyjs/docs-zh/master/$1',
         '.*?/awesome': 'https://raw.githubusercontent.com/docsifyjs/awesome-docsify/master/README.md',
         '.*?/changelog': 'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG.md',
-        '/.*/_navbar.md': '/_navbar.md',
-        '/en/(.*)': 'https://raw.githubusercontent.com/docsifyjs/docsify/master/docs/$1',
-        '/zh-cn/(.*)': 'https://raw.githubusercontent.com/docsifyjs/docs-zh/master/$1',
-        '/de-de/(.*)': 'https://raw.githubusercontent.com/docsifyjs/docs-de/master/$1',
-        '/ru/(.*)': 'https://raw.githubusercontent.com/docsifyjs/docs-ru/master/$1',
-        '/es/(.*)': 'https://raw.githubusercontent.com/docsifyjs/docs-es/master/$1'
       },
       auto2top: true,
       coverpage: true,
@@ -47,18 +49,16 @@
       maxLevel: 4,
       subMaxLevel: 2,
       ga: '',
-      // name: 'docsify-NetlifyCMS',
+      // name: 'docsify-NetlifyCMS',s
       search: {
         noData: {
-          '/de-de/': 'Keine Ergebnisse!',
-          '/zh-cn/': '没有结果!',
-          '/': 'No results!'
+          '/': 'No results!',
+          '/zh-cn/': '没有结果!'
         },
-        paths: 'auto',
+        paths: '/auto/',
         placeholder: {
-          '/de-de/': 'Suche',
-          '/zh-cn/': '搜索',
-          '/': 'Search'
+          '/': 'Type to search',
+          '/zh-cn/': '搜索'
         }
       },
       formatUpdated: '{MM}/{DD} {HH}:{mm}',
@@ -90,11 +90,21 @@
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/components/prism-bash.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/components/prism-markdown.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/components/prism-nginx.min.js"></script>
-
   <script>
-      ((window.gitter = {}).chat = {}).options = {
-        room: 'docsifyjs/Lobby'
-      };
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+  <script>
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'docsifyjs/Lobby'
+    };
   </script>
   <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 </body>

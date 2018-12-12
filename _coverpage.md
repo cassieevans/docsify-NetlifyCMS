@@ -9,4 +9,5 @@
 - Multiple themes
 
 [GitHub](https://github.com/DemoMacro/docsify-NetlifyCMS/)
-[Getting Started](#docsify)
+[Getting Started](README.md)
+[Admin](/admin/ ':ignore')
