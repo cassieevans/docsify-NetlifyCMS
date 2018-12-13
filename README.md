@@ -2,6 +2,8 @@
 
 > A docsify site hosted with Netlify CMS.
 
+> Error!This project has some problems about Netlify CMS,please check and wait to fix.
+
 <!-- Markdown snippet -->
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DemoMacro/docsify-NetlifyCMS/)
 
