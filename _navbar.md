@@ -1,3 +1,3 @@
 - [Home](README.md)
 - [Admin](/admin/ ':ignore')
-- [:cn: Docs](/zh-cn/)
+- [:cn: Docs](Introduction.md)

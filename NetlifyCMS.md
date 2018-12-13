@@ -1,5 +1,3 @@
-![logo](_media/icon.svg)
-
 # docsify - Netlify CMS
 
 > A docsify site hosted with Netlify CMS.
@@ -8,8 +6,12 @@
 
 > Please just use this project as a chinese document before it finished.
 
+<!-- Markdown snippet -->
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DemoMacro/docsify-NetlifyCMS/)
 
-[GitHub](https://github.com/DemoMacro/docsify-NetlifyCMS/)
-[Getting Started](README.md)
-[Admin](/admin/ ':ignore')
+
+## How to use it?
+
+> Just Fork this repository [docsify-Netlify CMS](https://github.com/DemoMacro/docsify-NetlifyCMS) and deploy to Netlify
+
+> admin: https://yoursite.netlify.com/admin/
