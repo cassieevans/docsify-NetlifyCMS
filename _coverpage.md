@@ -2,11 +2,9 @@
 
 # docsify - Netlify CMS
 
-> A magical documentation site generator.
+> A docsify site hosted with Netlify CMS.
 
-- Simple and lightweight (~21kB gzipped)
-- No statically built html files
-- Multiple themes
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DemoMacro/docsify-NetlifyCMS/)
 
 [GitHub](https://github.com/DemoMacro/docsify-NetlifyCMS/)
 [Getting Started](README.md)
