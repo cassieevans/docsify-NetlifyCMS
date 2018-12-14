@@ -1,3 +1,0 @@
-- [Home](https://raw.githubusercontent.com/DemoMacro/docsify-NetlifyCMS/master/README.md)
-- [Admin](/admin/ ':ignore')
-- [:cn: Docs](README.md)
