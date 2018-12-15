@@ -1,3 +1,0 @@
-- [首页](_coverpage.md)
-- [管理](/admin/ ':ignore')
-- [:cn: 文档](README.md)
