@@ -16,7 +16,6 @@
     disabled>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.8.6/lib/themes/pure.min.css" title="pure"
     disabled>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-codefund@1.0.4/index.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/netlify-identity-widget@1.5.2/build/netlify-identity-widget.min.js"></script>
   <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
@@ -49,8 +48,6 @@
       mergeNavbar: true,
       maxLevel: 4,
       subMaxLevel: 2,
-      // ga: '',
-      // name: 'docsify-NetlifyCMS',
       search: {
         noData: {
           '/': '没有结果!'
@@ -79,12 +76,10 @@
               + '<a href="https://docsify.imst.xyz" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Powered by Docsify - NetlifyCMS</a>'
           })
         }
-        // DocsifyCodefund.create('fae1f9a4-870c-4c25-b8e0-c80464f7a95c')
       ]
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4.8.6/lib/docsify.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4.8.6/lib/plugins/ga.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4.8.6/lib/plugins/search.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/components/prism-bash.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/components/prism-markdown.min.js"></script>
@@ -100,7 +95,7 @@
       window.netlifyIdentity.on("init", user => {
         if (!user) {
           window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
+            document.location.href = "https://docsify.imst.xyz/admin/";
           });
         }
       });
