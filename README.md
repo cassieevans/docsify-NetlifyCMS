@@ -1,4 +1,4 @@
-# docsify - Netlify CMS
+# docsify-Netlify CMS
 
 > A docsify site hosted with Netlify CMS.
 
@@ -7,7 +7,7 @@
 > Please just use this project as a chinese document before it finished.
 
 <!-- Markdown snippet -->
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DemoMacro/docsify-NetlifyCMS/)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DemoMacro/docsify-NetlifyCMS/) 
 
 
 ## How to use it?
