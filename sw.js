@@ -9,7 +9,6 @@
 const RUNTIME = 'docsify'
 const HOSTNAME_WHITELIST = [
     self.location.hostname,
-    'cdn.jsdelivr.net'
 ]
 
 // The Util Function to hack URLs of intercepted requests
