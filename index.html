@@ -35,10 +35,10 @@
     window.$docsify = {
       alias: {
         '/.*/_navbar.md': '/_navbar.md',
-        '/(.*)': 'https://cdn.staticaly.com/gh/Staticfiles/docsify-cn/master/$1',
+        '/(.*)': 'https://cdn.imst.xyz/gh/DemoMacro/docsify-cn/master/$1',
         '.*?/netlifycms': 'https://raw.githubusercontent.com/DemoMacro/docsify-NetlifyCMS/master/README.md',
-        '.*?/awesome': 'https://cdn.staticaly.com/gh/docsifyjs/awesome-docsify/master/README.md',
-        '.*?/changelog': 'https://cdn.staticaly.com/gh/docsifyjs/docsify/master/CHANGELOG.md'
+        '.*?/awesome': 'https://cdn.imst.xyz/gh/docsifyjs/awesome-docsify/master/README.md',
+        '.*?/changelog': 'https://cdn.imst.xyz/gh/docsifyjs/docsify/master/CHANGELOG.md'
       },
       auto2top: true,
       coverpage: true,
@@ -61,9 +61,9 @@
       plugins: [
         function (hook, vm) {
           hook.beforeEach(function (html) {
-            if (/staticaly\.com/.test(vm.route.file)) {
+            if (/cdn.imst\.xyz/.test(vm.route.file)) {
               url = vm.route.file
-                .replace('cdn.staticaly.com/gh', 'github.com')
+                .replace('cdn.imst.xyz/gh', 'github.com')
                 .replace(/\/master/, '/blob/master')
             } else {
               url = 'https://github.com/DemoMacro/docsify-NetlifyCMS/blob/master/' + vm.route.file
