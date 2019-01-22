@@ -30,10 +30,10 @@
     window.$docsify = {
       alias: {
         '/.*/_navbar.md': '/_navbar.md',
-        '/(.*)': 'https://cdn.imst.xyz/gh/DemoMacro/docsify-cn/master/$1',
-        '.*?/netlifycms': 'https://cdn.imst.xyz/gh/DemoMacro/docsify-NetlifyCMS/master/README.md',
-        '.*?/awesome': 'https://cdn.imst.xyz/gh/docsifyjs/awesome-docsify/master/README.md',
-        '.*?/changelog': 'https://cdn.imst.xyz/gh/docsifyjs/docsify/master/CHANGELOG.md'
+        '/(.*)': 'https://github.cdn.imst.xyz/DemoMacro/docsify-cn/master/$1',
+        '.*?/netlifycms': 'https://github.cdn.imst.xyz/DemoMacro/docsify-NetlifyCMS/master/README.md',
+        '.*?/awesome': 'https://github.cdn.imst.xyz/docsifyjs/awesome-docsify/master/README.md',
+        '.*?/changelog': 'https://github.cdn.imst.xyz/docsifyjs/docsify/master/CHANGELOG.md'
       },
       auto2top: true,
       coverpage: true,
@@ -58,7 +58,7 @@
           hook.beforeEach(function (html) {
             if (/cdn.imst\.xyz/.test(vm.route.file)) {
               url = vm.route.file
-                .replace('cdn.imst.xyz/gh', 'github.com')
+                .replace('github.cdn.imst.xyz', 'github.com')
                 .replace(/\/master/, '/blob/master')
             } else {
               url = 'https://github.com/DemoMacro/docsify-NetlifyCMS/blob/master/' + vm.route.file
